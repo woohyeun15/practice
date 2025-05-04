@@ -1,0 +1,81 @@
+/* 화면 전체 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f5;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Noto Sans', sans-serif;
+  color: #333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 카드 박스 스타일 */
+.card {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 텍스트 스타일 */
+h1 {
+  font-size: 2rem;
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #495057;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.quote {
+  font-style: italic;
+  color: #868e96;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+/* 리스트 전체 */
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 리스트 아이템 태그 스타일 */
+.skills li {
+  display: inline-block;
+  background-color: #e9ecef;
+  color: #343a40;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 12px;
+  transition: background-color 0.3s;
+
+  cursor: default;
+}
+
+.skills li:hover {
+  background-color: #ced4da;
+  cursor: pointer;
+}

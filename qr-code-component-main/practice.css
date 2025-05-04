@@ -1,0 +1,47 @@
+/* 1. 초기화 */
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 배경과 텍스트 정렬 */
+body {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+/* main 박스를 중앙에 정렬하기 위한 block + auto margin */
+main {
+  background-color: white;
+  padding: 24px;
+  margin: 100px auto; /* 상하 100px, 좌우 자동으로 중앙정렬 */
+  width: 360px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 이미지 스타일 */
+main img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* 제목 */
+main h1 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+/* 본문 텍스트 */
+main p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+}

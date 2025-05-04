@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼(input) 요소</title>
+    <link
+      rel="shortcut icon"
+      href="/public/favicon/bootcamp.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/public/favicon/bootcamp.svg" type="image/svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/suit/SUIT-Variable.woff2"
+    />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>폼(input) 요소</h1>
+
+    <form action="https://formspree.io/f/xeqwwbwk" method="POST">
+      <!-- 폼 관련 요소는 모두 1대1로 대응되는 레이블을 가져야 함. -->
+      <!-- 한줄 글상자 -->
+      <!-- text : 텍스트 입력 서식 -->
+      <div>
+        <label for="userName">이름</label
+        ><input type="text" id="userName" name="userName" />
+      </div>
+      <!-- password: 비밀번호 입력 서식 -->
+      <div>
+        <label for="userPassword">비밀번호</label
+        ><input
+          required
+          type="password"
+          name="userPassword"
+          id="userPassword"
+        />
+      </div>
+
+      <!-- search : 검색어 입력 서식 (HTML5에서 추가) -->
+      <div>
+        <label for="searchKeyword">검색어</label
+        ><input
+          type="search"
+          id="searchKeyword"
+          placeholder="검색어를 입력하세요"
+          name="keyword"
+        />
+      </div>
+
+      <!-- tel: 전화번호 입력 서식 (HTML5에서 추가) -->
+      <div>
+        <label for="userPhone">전화번호</label
+        ><input required type="tel" name="userPhone" id="userPhone" />
+      </div>
+
+      <!-- email: 이메일 입력 서식 (HTML5에서 추가) -->
+      <div>
+        <label for="userEmail">이메일</label
+        ><input required type="email" name="userEmail" id="userEmail" />
+      </div>
+
+      <!-- WAI-ARIA -->
+      <div>
+        <span id="userEmail-1">이메일</span>
+        <input type="email" name="userEmail-1" aria-labelledby="userEmail-1" />
+      </div>
+
+      <!-- checkbox : 체크박스 서식 -->
+      <div>
+        <input
+          type="checkbox"
+          checked
+          value="html"
+          name="bootcamp"
+          id="bootcampHtml"
+        />
+        <label for="bootcampHtml">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" value="css" name="bootcamp" id="bootcampCss" />
+        <label for="bootcampCss">CSS</label>
+      </div>
+
+      <!-- radio : 라디오 서식 -->
+      <div>
+        <label>
+          <input type="radio" checked name="classRoom" value="classRoom1" />
+          회고 1팀
+        </label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" name="classRoom" value="classRoom2" />
+          회고 2팀
+        </label>
+      </div>
+
+      <!-- 버튼 (전속, 초기화, 일반버튼) -->
+      <div>
+        <input type="submit" value="전송" />
+        <input type="reset" value="초기화" />
+        <input type="button" value="버튼" />
+      </div>
+    </form>
+  </body>
+</html>
