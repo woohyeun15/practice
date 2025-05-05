@@ -1,18 +1,65 @@
 <!doctype html>
-<html lang="ko-KR">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>연습용 웹페이지</title>
+    <title>계단식 카드 배치</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        padding: 40px;
+      }
+
+      .card-wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .testimonial {
+        display: inline-block;
+        width: 280px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-right: 20px;
+        vertical-align: top;
+      }
+
+      .testimonial:nth-child(2) {
+        margin-top: 20px;
+      }
+
+      .testimonial:nth-child(3) {
+        margin-top: 40px;
+      }
+
+      .testimonial h3 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .testimonial p {
+        color: #666;
+        line-height: 1.5;
+      }
+    </style>
   </head>
   <body>
-    <h1>고우현</h1>
-    <hr />
-    <p>내 이름은 고우현 입니다.</p>
-    <img src="./src/assets/123.PNG" alt="고우현 프로필 사진" />
-    <hr />
-    <a href="https://youtube.com" target="_blank">
-      <button>유튜브</button>
-    </a>
+    <div class="card-wrapper">
+      <div class="testimonial">
+        <h3>고객 A</h3>
+        <p>이 서비스는 정말 최고였습니다. 다시 이용하고 싶어요!</p>
+      </div>
+      <div class="testimonial">
+        <h3>고객 B</h3>
+        <p>친절하고 빠른 대응에 감동했어요. 강력 추천합니다.</p>
+      </div>
+      <div class="testimonial">
+        <h3>고객 C</h3>
+        <p>처음에는 걱정했는데 결과가 너무 만족스러워요!</p>
+      </div>
+    </div>
   </body>
 </html>
